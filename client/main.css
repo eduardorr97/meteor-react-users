@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600&display=swap');
+body {
+  margin: 0;
+}
+
+@keyframes descend {
+  from {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes translate-left {
+  from {
+    transform: translate(-20px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: .5;
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "name": "meteor-react-users",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.10.3",
+    "@material-ui/core": "^4.10.2",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "@types/common-tags": "^1.8.0",
+    "@types/lodash": "^4.14.155",
+    "@types/meteor": "^1.4.47",
+    "@types/meteor-collection-hooks": "^0.8.5",
+    "@types/meteor-roles": "^1.2.32",
+    "@types/react-router": "^5.1.7",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/simpl-schema": "^0.2.7",
+    "bcrypt": "^4.0.1",
+    "common-tags": "^1.8.0",
+    "history": "^5.0.0",
+    "lodash": "^4.17.15",
+    "meteor-node-stubs": "^1.0.0",
+    "moment": "^2.27.0",
+    "notistack": "^0.9.17",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-error-boundary": "^2.2.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "simpl-schema": "^1.7.1",
+    "uniforms": "^2.6.9",
+    "uniforms-bridge-simple-schema-2": "^2.6.7",
+    "uniforms-material": "^2.6.7"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.ts",
+      "server": "server/main.ts"
+    }
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-meteor": "^7.0.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "typescript": "^3.8.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "meteor npm run lint"
+    ]
+  }
+}

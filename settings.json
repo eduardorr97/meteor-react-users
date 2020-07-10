@@ -1,0 +1,12 @@
+{
+  "public": {
+    "baseUrl": "http://localhost:3000"
+  },
+  "private": {
+    "emailToSendRootPassword": "admin@vr.com",
+    "apiCredentials": {
+      "user": "user",
+      "password": "password"
+    }
+  }
+}
