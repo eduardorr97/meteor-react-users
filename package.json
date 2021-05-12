@@ -33,7 +33,7 @@
     "react-error-boundary": "^2.2.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "simpl-schema": "^1.7.1",
+    "simpl-schema": "^1.10.2",
     "uniforms": "^2.6.9",
     "uniforms-bridge-simple-schema-2": "^2.6.7",
     "uniforms-material": "^2.6.7"
